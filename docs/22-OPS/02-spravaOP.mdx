@@ -8,17 +8,17 @@ date: 19.9.2023
 - OP je paměť přímo přístupná procesoru
 - Uchovává kód programů, procesů, mezivýsledky jejich činností, stav ostatních prostředků
 - Souvisle adresovatelná paměť rozdělená do buněk
-- OP souvislý prostor paměťových buněk o velikosti 1Byte, jež jsou lineárně adresovány
+- OP je souvislý prostor paměťových buněk o velikosti 1Byte, jež jsou lineárně adresovány
 - Pokud je tento adresový prostor přímo reprezentován fyzickou pamětí **RAM**, označujeme jej jako Fyzický adresový prostor **FAP**
-- Velikost prostoru je daná
+- Velikost prostoru je daná **RAM**
 
-##### Správa FAP musí plnit následující funkce
+##### Správa FAP musí plnit následující funkce:
 
 - **Přidělování** paměťových regionů na požádání procesů
 - **Uvolňování** paměťových regionů na žádosti procesů (vždy musí skončit úspěchem)
 - **Udržování** informací o obsazení adresového prostoru
 - **Zabezpečení** ochrany paměti, brání procesům přistupovat k paměti mimo regiony, které vlastní
-- **Podporovat střídavý běh** více procesů
+- **Podporovat střídavý běh** - více procesů
 
 # Metody správy FAP
 
